@@ -39,10 +39,10 @@ app.get('/ui/js/creative.js', function (req, res) {
 });
 
 app.get('/ui/img/header.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'header.jpg'));
+  res.sendFile(path.join(__dirname, 'ui', '/img/header.jpg'));
 });
 app.get('/ui/img/profile.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'profile.jpg'));
+  res.sendFile(path.join(__dirname, 'ui', '/img/profile.jpg'));
 });
 /*app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
