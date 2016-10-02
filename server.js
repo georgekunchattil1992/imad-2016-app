@@ -9,9 +9,12 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/ui/css/bootstrap.min.css', function (req, res) {
+var fs=require("fs");
+var js=fs.readFileSync("/ui/css/bootstrap.min.css","UTF-8");
+console.log(js);
+/*app.get('/ui/css/bootstrap.min.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', '/css/bootstrap.min.css'));
-});
+});*/
 app.get('/ui/css/animate.min.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', '/css/animate.min.css'));
 });
