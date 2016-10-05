@@ -26,7 +26,7 @@ app.get('/css/style.css',function(req,res){
 
 
 var port = 3080; // Use 8080 for local development because you might already have apache running on 80
-app.listen("http://georgekunchattil1992.imad.hasura-app.io/", function () {
+app.listen(3080,"http://georgekunchattil1992.imad.hasura-app.io/", function () {
   console.log(`IMAD course app listening on port ${port}!`);
 });
 
