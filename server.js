@@ -8,7 +8,7 @@ app.use(morgan('combined'));
 
 app.use(express.static('ui'));
 app.get('/',function(req,res){
-	res.sendFile(__dirname + '/ui/index.html');
+	res.sendFile(__dirname + '/public/index.html');
 });
 
 /* one way of including css
