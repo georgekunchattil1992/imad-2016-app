@@ -6,7 +6,7 @@ var app = express();
 
 app.use(morgan('combined'));
 
-app.use(express.static('ui'));
+app.use(express.static('public'));
 app.get('/',function(req,res){
 	res.sendFile(__dirname + '/public/index.html');
 });
