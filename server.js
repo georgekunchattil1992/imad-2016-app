@@ -1,11 +1,10 @@
 var morgan = require('morgan');
 var path = require('path');
 
-var app = express();
-app.use(morgan('combined'));
-
 var express=require('express');
-var app=express();
+var app = express();
+
+app.use(morgan('combined'));
 
 app.use(express.static('ui'));
 app.get('/',function(req,res){
