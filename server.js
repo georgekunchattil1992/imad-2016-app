@@ -12,5 +12,5 @@ app.get('/css/style.css',function(req,res){
 });*/
 
 app.listen(8080,function(){
-	console.log('app is listening on port 192.168.1.3:8080 !');
+	console.log('app is listening on 8080 !');
 });
